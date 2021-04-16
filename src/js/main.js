@@ -1,3 +1,17 @@
+function parseAngleString(angleString) {
+  var result = angleString.match(/(\d+) (\d+) ((?:\d+\.\d+)|(?:\d+))/);
+  if (!result) {
+    return null;
+  } else {
+    var degrees = parseInt(result[1]);
+    var minutes = parseInt(result[2]);
+    var seconds = parseFloat(result[3]);
+    var angle = [degrees, minutes, seconds];
+    return angle;
+  }
+}
+
+
 function angleToSeconds(degrees, minutes, seconds) {
   return 60 * 60 * degrees + 60 * minutes + seconds;
 }
