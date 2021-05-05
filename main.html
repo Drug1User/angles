@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta charset="utf-8">
+    <meta charset="utf-8">
     <title>"Вычисление углов"</title>
   </head>
   <body>
-    <script src="src/js/main.js">
-    	
-    </script>
+    <form id="angles-form" action="">
+      <div>
+        <input type="text" name="angle1">
+      </div>
+
+      <div>
+        <select name="operation">
+          <option value="sum">сложить</option>
+          <option value="sub">вычесть</option>
+        </select>
+      </div>
+            
+      <div> 
+        <input type="text" name="angle2">           
+      </div>
+
+      <input type="submit" value="Посчитать">
+    
+    </form>
+    <div id="result"></div>
   </body>
+  <script src="src/js/main.js"></script>
 </html>
