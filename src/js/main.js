@@ -24,3 +24,8 @@ function secondsToAngle(seconds) {
   var angle = [degrees, minutes, seconds];
   return angle;
 }
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("Page loaded!");
+});
